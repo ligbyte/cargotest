@@ -104,7 +104,7 @@ mod tests {
     
     // 被忽略的测试（默认不运行）
     #[test]
-    #[ignore = "这是一个耗时测试，平时不需要运行"]  // 标记为忽略的测试[1,11](@ref)
+    // #[ignore = "这是一个耗时测试，平时不需要运行"]  // 标记为忽略的测试[1,11](@ref)
     fn test_expensive_operation() {
         let mut counter = Counter::new();
         for _ in 0..1000 {
